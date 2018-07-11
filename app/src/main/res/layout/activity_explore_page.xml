@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layConRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExplorePage">
+
+
+    <ScrollView
+        android:id="@+id/layScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layLinRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d9d9d9"
+            android:orientation="vertical">
+
+            //SearchBar
+
+            <LinearLayout
+                android:id="@+id/layLinSearchBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/layConSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SearchView
+                        android:id="@+id/searchViewMain"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:longClickable="true"
+                        android:queryHint="Etkinlik ya da Eğitim Ara"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.194">
+
+                    </SearchView>
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            //Taglar
+
+            //Main Slider
+
+            <LinearLayout
+                android:id="@+id/layLinTags"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:paddingLeft="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:orientation="vertical"
+                            android:paddingTop="6dp">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="100dp"
+                                android:layout_height="30dp">
+
+                                <TextView
+                                    android:id="@+id/textView_yakinda"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/butonarkaplanigradientgrey"
+                                    android:clickable="true"
+                                    android:fontFamily="@font/proxima"
+                                    android:gravity="center"
+                                    android:onClick="perform_action"
+                                    android:text="YAKINDAKİ"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </android.support.constraint.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:orientation="vertical"
+                            android:paddingTop="6dp">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="100dp"
+                                android:layout_height="30dp">
+
+                                <TextView
+                                    android:id="@+id/textView_spor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/butonarkaplanigradient"
+                                    android:clickable="true"
+                                    android:fontFamily="@font/proxima"
+                                    android:gravity="center"
+                                    android:text="SPOR"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </android.support.constraint.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:orientation="vertical"
+                            android:paddingTop="6dp">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="100dp"
+                                android:layout_height="30dp">
+
+                                <TextView
+                                    android:id="@+id/textView37567"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/butonarkaplanigradient"
+                                    android:fontFamily="@font/proxima"
+                                    android:gravity="center"
+                                    android:text="STEM"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </android.support.constraint.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:orientation="vertical"
+                            android:paddingTop="6dp">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="100dp"
+                                android:layout_height="30dp">
+
+                                <TextView
+                                    android:id="@+id/textView37567"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/butonarkaplanigradient"
+                                    android:fontFamily="@font/proxima"
+                                    android:gravity="center"
+                                    android:text="BALE"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </android.support.constraint.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:orientation="vertical"
+                            android:paddingTop="6dp">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="100dp"
+                                android:layout_height="30dp">
+
+                                <TextView
+                                    android:id="@+id/textView37567"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/butonarkaplanigradient"
+                                    android:fontFamily="@font/proxima"
+                                    android:gravity="center"
+                                    android:text="YÜZME"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </android.support.constraint.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:orientation="vertical"
+                            android:paddingTop="6dp">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="100dp"
+                                android:layout_height="30dp">
+
+                                <TextView
+                                    android:id="@+id/textView37567"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/butonarkaplanigradient"
+                                    android:fontFamily="@font/proxima"
+                                    android:gravity="center"
+                                    android:text="DANS"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </android.support.constraint.ConstraintLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layLinSliderMain"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/layLinSlider1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/conLayHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview_baslik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="POPÜLER ARAMALAR"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView_1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:src="#3cfd41"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textview_baslik"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView_countAct1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:fontFamily="@font/proximanova"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView_1"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView_1"
+                        app:layout_constraintStart_toStartOf="@+id/imageView_1"
+                        app:layout_constraintTop_toTopOf="@+id/imageView_1" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                        </android.support.v7.widget.RecyclerView>
+                    </android.support.constraint.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layLinCategories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/conLayHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview_baslik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="KATEGORİLER"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView_1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:src="#3cfd41"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textview_baslik"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView_countCats1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proximanova"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="00"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView_1"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView_1"
+                        app:layout_constraintStart_toStartOf="@+id/imageView_1"
+                        app:layout_constraintTop_toTopOf="@+id/imageView_1" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerViewCats"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                        </android.support.v7.widget.RecyclerView>
+                    </android.support.constraint.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layLinKurumlar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/conLayHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview_baslik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="BAŞLICA KURUMLAR"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView_1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:src="#3cfd41"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textview_baslik"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView_countOwners1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proximanova"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="00"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView_1"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView_1"
+                        app:layout_constraintStart_toStartOf="@+id/imageView_1"
+                        app:layout_constraintTop_toTopOf="@+id/imageView_1" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerViewKurumlar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                        </android.support.v7.widget.RecyclerView>
+                    </android.support.constraint.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layLinWeekFeatured"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/layConWeekFeatured"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textview_haftaninFirsati"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="HAFTANIN FIRSATI"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textview_haftaninFirsati"
+                        app:srcCompat="@drawable/icerik_arka_plan" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imageView_span1"
+                        android:layout_width="10dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginStart="8dp"
+                        android:adjustViewBounds="false"
+                        android:scaleType="fitXY"
+                        android:src="#3cfd41"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:riv_border_color="#333333"
+                        app:riv_border_width="0dip"
+                        app:riv_corner_radius="4dip"
+                        app:riv_mutate_background="true" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginEnd="180dp"
+                        android:layout_marginStart="8dp"
+                        android:text="TextView"
+                        android:textAlignment="viewStart"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView_span1"
+                        tools:text="Başlık" />
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/mapView"
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Kişi Başı 000 TL"
+                        android:textSize="10sp"
+                        app:layout_constraintEnd_toEndOf="@+id/mapView"
+                        app:layout_constraintTop_toTopOf="@+id/mapView" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Kısa Adres"
+                        app:layout_constraintStart_toStartOf="@+id/mapView"
+                        app:layout_constraintTop_toTopOf="@+id/mapView" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imageView_star1"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:adjustViewBounds="false"
+                        android:contentDescription=" "
+                        android:scaleType="fitXY"
+                        android:src="@drawable/star"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5"
+                        app:riv_border_color="#333333"
+                        app:riv_border_width="0dip"
+                        app:riv_corner_radius="4dip"
+                        app:riv_mutate_background="true" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imageView_star2"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:adjustViewBounds="false"
+                        android:contentDescription=" "
+                        android:scaleType="fitXY"
+                        android:src="@drawable/star"
+                        app:layout_constraintStart_toEndOf="@+id/imageView_star1"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5"
+                        app:riv_border_color="#333333"
+                        app:riv_border_width="0dip"
+                        app:riv_corner_radius="4dip"
+                        app:riv_mutate_background="true" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imageView_star3"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:adjustViewBounds="false"
+                        android:contentDescription=" "
+                        android:scaleType="fitXY"
+                        android:src="@drawable/star"
+                        app:layout_constraintStart_toEndOf="@+id/imageView_star2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5"
+                        app:riv_border_color="#333333"
+                        app:riv_border_width="0dip"
+                        app:riv_corner_radius="4dip"
+                        app:riv_mutate_background="true" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imageView_star4"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:adjustViewBounds="false"
+                        android:contentDescription=" "
+                        android:scaleType="fitXY"
+                        android:src="@drawable/star"
+                        app:layout_constraintStart_toEndOf="@+id/imageView_star3"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5"
+                        app:riv_border_color="#333333"
+                        app:riv_border_width="0dip"
+                        app:riv_corner_radius="4dip"
+                        app:riv_mutate_background="true" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imageView_star5"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:adjustViewBounds="false"
+                        android:contentDescription=" "
+                        android:scaleType="fitXY"
+                        android:src="@drawable/star"
+                        app:layout_constraintStart_toEndOf="@+id/imageView_star4"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5"
+                        app:riv_border_color="#333333"
+                        app:riv_border_width="0dip"
+                        app:riv_corner_radius="4dip"
+                        app:riv_mutate_background="true" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@+id/mapView"
+                        tools:layout_editor_absoluteX="0dp">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/imageViewOnce2"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_weight="1"
+                                android:adjustViewBounds="false"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_launcher_background"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:riv_border_color="#fff"
+                                app:riv_border_width="5dip"
+                                app:riv_corner_radius="100dip"
+                                app:riv_mutate_background="true" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="Kullanıcı Adı"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageViewOnce2"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginTop="8dp"
+                                android:background="#ffffffff"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/paylas_tusu" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="24dp"
+                                android:background="#ffffffff"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/kirmizi_kalp" />
+
+                        </android.support.constraint.ConstraintLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="000 Puanlama"
+                        android:textSize="10sp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView_star5"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                </android.support.constraint.ConstraintLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

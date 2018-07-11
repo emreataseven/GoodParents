@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Good Parents</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">SONRAKİ</string>
+    <string name="skip">ATLA</string>
+    <string name="start">ANLADIM</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_explorer_maps">Etkinlikleri Keşfet</string>
+</resources>
